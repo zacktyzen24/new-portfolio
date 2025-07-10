@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap'); 
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#home{
+    background-image: url(./src/photo-1510519138101-570d1dca3d66.jpeg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 0 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+    
+    
+
+
+
+    
+
+
+
+.main-btn{
+    display: flex;
+}
+
+
+
+    
+    
+
+.main-con{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-top: 30px;
+}
+.main-txt{
+    margin-top: 30px;
+}
+main {
+    display: flex;
+    align-items: center;
+    height: 600px;
+  /* display: flex;
+  justify-content: center;   
+  align-items: center;       
+  height: calc(100vh - 100px); 
+  gap: 50px; */
+}
+.main-txt h1{
+    font-size: 70px;
+    font-weight: lighter;
+    color: white;
+
+}
+.main-txt h2{
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    
+}
+.main-txt p{
+    font-size: 20px;
+    letter-spacing: 23px;
+    color: silver;
+    
+
+}
+.main-btn {
+    padding-top: 20px;
+    gap: 50px;
+    
+}
+.main-btn button{
+    padding: 8px 30px;
+    border-radius: 15px;
+    background-color: transparent;
+    color: white;
+    border-color: silver;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.main-btn button:hover{
+    
+background:white;
+color: black;
+border-width: 5px;
+border-color:silver
+
+}
+.main-txt {
+  transition: transform 0.3s ease;
+}
+
+.main-txt:hover {
+  transform: rotateY(20deg) rotateX(2deg);
+  
+}
+.list p{
+    color: silver;
+    
+    font-size: 2rem;
+    transition: 0.3s ease;
+    
+}
+.list p:hover{
+    color: white;
+   
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+
+.social-links{
+    margin-top: 80px;
+
+    
+
+}
+.social-links img{
+    width: 60px;
+    transition: 0.3s ease;
+    padding-left: 20px;
+    
+}
+.social-links img:hover{
+    transform: scale(1.05);
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background: rgba(0, 0, 0, 0.4); /* Optional transparent bg */
+  backdrop-filter: blur(10px);    /* Optional glass effect */
+  padding: 0px 0;
+  padding-top: 10px;
+}
+
+nav .container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.nav-items {
+    display: flex;
+    gap: 40px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul a{
+    text-decoration: none;
+    color: white;
+}
+.logo{
+    color: silver;
+}
+#about{
+    background-color: rgb(144, 105, 148);
+    background-image: url(./src/WhatsApp\ Image\ 2025-07-10\ at\ 17.51.36_de7df05d.jpg);
+    background-blend-mode: multiply;
+    height: 100vh;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 230px ;
+    align-items: start;
+    justify-content: center;
+    background-size: cover;
+    
+}
+.abt-mid{
+    max-width: 600px;
+    padding-top: 120px;
+    padding-bottom: 200px;
+    text-align: left;
+}
+
+.line-p{
+    color: blue;
+    
+}
+span{
+    color: white;
+}
+.abt-top h1{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    margin-top: 20px;
+    
+}
+.abt-address{
+
+}
+#skills{
+    background: #6b4242;
+background: linear-gradient(2deg, rgba(107, 66, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
+height: 100vh;
+display: grid;
+
+}
+#skills {
+  background: linear-gradient(2deg, rgba(107, 66, 66, 1) 0%, rgba(0, 0, 0, 1) 100%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-setu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  width: 80%;
+  max-width: 1100px;
+  
+  
+}
+
+.skill-box {
+  aspect-ratio: 1 / 1; /* makes it a square */
+  color: white;
+ 
+}
+
+.skill-card {
+  background: #1a1a1a;
+  border-radius: 12px;
+  padding: 20px;
+  height: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+}
+.skill-setu {
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+  
+}
+
+.skill-head h1{
+    color: white;
+    padding: 0px 15px ;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    text-decoration: underline;
+    text-decoration-color: aquamarine;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 6px;
+    justify-content: left;
+}
+#contact{
+background: #000000;
+background: linear-gradient(356deg, rgba(0, 0, 0, 1) 30%, rgba(107, 66, 66, 1) 95%);
+color: white;
+}
+
+#contact {
+  background-color: #f2f2f2;
+  padding: 60px 40px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.contact-page {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.contact-text h1 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.contact-text p {
+  color: white;
+  margin-bottom: 40px;
+}
+
+main {
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+  flex-wrap: wrap; /* Responsive for small screens */
+}
+
+.main-one, .main-two {
+  flex: 1;
+  min-width: 300px;
+}
+
+.main-one label {
+  display: block;
+  margin: 20px 0 6px;
+  font-size: 14px;
+  color: silver;
+}
+
+.main-one input[type="text"],
+.main-one input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  background: transparent;
+  font-size: 16px;
+  color: #000;
+}
+
+.main-one input:focus {
+  outline: none;
+  border-bottom: 2px solid #000;
+}
+
+.main-one button {
+  margin-top: 30px;
+  padding: 10px 30px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.main-one button:hover {
+  background: #333;
+}
+
+.main-two h1 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.main-two p {
+  color: silver;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.main-two button {
+  padding: 10px 24px;
+  background: black;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.main-two button:hover {
+  background: #333;
+}
+.contact p{
+
+}

@@ -5,17 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio of Me | Simeyon</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <section id="home" class="home">
             <nav>
                 <div class="container">
                     <a href=""class="logo"><h2 >Simeyon</h2></a>
-                    <ul class="nav-items">
+                    <div class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="nav-items" id="nav-items">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#skills">Skills</a></li>
                         <li><a href="#contact">Contact</a></li>
+                        <li id="close-btn"><i class="fas fa-times"></i> </li>
                     </ul>
                 </div>
             </nav>
@@ -27,16 +34,16 @@
                         <p>Web Developer</p>
                     </div>
                     <div class="main-btn">
-                        <button class="resume-btn btn">Resume</button>
-                        <button class="contact btn">Contact</button>
+                        <a href="./src/Minimalist Modern Professional CV Resume (1).pdf" download="resume" class="resume-btn btn">Resume</a>
+                        <a href="#contact"class="contact btn">Contact</a>
                     </div>
                 </div>            
             </main>
 
             <div class="social-links">
-                <a href="#"><img src="./src/icons/instagram.png"></a>
-                <a href="#"><img src="./src/icons/linkedin.png"></a>
-                <a href="#"><img src="./src/icons/facebook.png" ></a>
+                <a href="https://www.instagram.com/sime_stuffs?igsh=MTJuY281bTN3YzNmYQ=="><img src="./src/icons/instagram.png"></a>
+                <a href="https://www.linkedin.com/in/simeyon-mathew-a668152b1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="./src/icons/linkedin.png"></a>
+                <a href="https://www.facebook.com/share/19466T1ddD/"><img src="./src/icons/facebook.png" ></a>
             </div>
         </div>
     </section>
@@ -166,5 +173,19 @@
             </div>
         </div>
      </section>
+
 </body>
+<script>
+ const hamburger = document.getElementById('hamburger');
+  const navItems = document.getElementById('nav-items');
+  const closeBtn = document.getElementById('close-btn');
+
+  hamburger.addEventListener('click', () => {
+    navItems.classList.add('active');
+  });
+
+  closeBtn.addEventListener('click', () => {
+    navItems.classList.remove('active');
+  });
+</script>
 </html>
